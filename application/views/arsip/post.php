@@ -46,6 +46,8 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Gunakan file berformat PDF<br>
                 </div>
                 <br>
+            <div class="form-container">
+
                 <div class="card-body">
                     <?= $this->session->flashdata('message'); ?>
 
@@ -53,7 +55,6 @@
                     <form action="<?php echo site_url(); ?>AdminClient/post_process" class="needs-validation" method="POST" enctype="multipart/form-data" onload="setSelectBoxByText()">
                         <div class="form-group row">
                             <label for="floatingSelect">Nomor Surat</label>
-                            
                             <input style="height:40px; width:547;" type="text" name="no_surat" class="form-control form-control-user" id="no_surat" required></input>
                             <span class="text-danger"></span>
                         </div>
@@ -61,7 +62,7 @@
                             <label for="kategori">Kategori</label>
                             <div class="col-sm-10">
                             <select style="height:40px; width:547;" class="form-control" name="kategori" id="kategori">
-                                <option value=""></option>
+                                <option value="">--Pilih--</option>
                                 <option value="undangan">Undangan</option>
                                 <option value="pengumunan">Pengumuman</option>
                                 <option value="notadinas">Nota Dinas</option>
@@ -75,7 +76,7 @@
                             <span class="text-danger"></span>
                             
                         </div>
-                        <div class="form-group">
+                        <div class="form-group row">
                         <label for="floatingSelect">File Surat</label>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <input type="file" size="32" class="form-control-file" placeholder="Choice Foto" name="pdf_file">
@@ -87,7 +88,7 @@
                          <div class="col-md-12 col-sm-12 col-xs-12">
                             <input type="hidden" class="form-control" name="waktu"id="waktu" placeholder="Tanggal ulasan" value="<?php echo date('Y-m-d / H:i:s'); ?>" required data-error="Please enter your message subject" readonly>
                             <div class="help-block with-errors"></div>
-                        </div>
+                        </div><br>
                         <div class="form-group">
                             <input type="submit" name="" value="Tambahkan" style="height:40px; width:447;" class="btn btn-primary btn-user btn-block" />
                         </div>
@@ -97,6 +98,7 @@
 
                 </div>
             </div>
+            </div>
 
         </section>
     </div>
@@ -104,7 +106,7 @@
     <footer>
         <div class="footer clearfix mb-0 text-muted">
             <div class="float-start">
-                <p>2021 © Literasi</p>
+                <p>2021 © Arsip</p>
             </div>
             <div class="float-end">
             </div>

@@ -52,7 +52,7 @@
                                         <h4 class="card-title text-dark">Nomor : <?php echo $rows->no_surat; ?></h4>
                                         <h5 class="card-title text-dark">Kategori : <?php echo $rows->kategori; ?></h5>
                                         <h5 class="card-title text-dark">Judul : <?php echo $rows->judul; ?></h5>
-                                        <h5 class="card-title text-dark">Waktu Unggah : <?php echo $rows->waktu; ?></h5>
+                                        <h5 class="card-title text-dark">Waktu Unggah : <?php echo  $rows->waktu; ?></h5>
                                         <tr>
 
                                             <td><iframe src="<?php echo base_url('file_pdf/' . $rows->pdf_file) ?>" width="900" height="900"></iframe></td>
@@ -65,7 +65,7 @@
                                 Kembali
                             </span>
                         </a>
-                        <a class='btn btn-success' href="<?php echo site_url(); ?>AdminClient/unduh/<?= $rows->id_surat; ?>">
+                        <a class='btn btn-success' href="<?php echo site_url(); ?>AdminClient/download/<?= $rows->id_surat; ?>">
                             <i class="fa fa-plus"></i>
                             <span>
                                 Unduh

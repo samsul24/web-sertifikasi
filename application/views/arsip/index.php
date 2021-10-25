@@ -73,7 +73,7 @@
                                     <td>
                                         <a href="<?= base_url(); ?>AdminClient/delete/<?= $rows->id_surat; ?>" class="btn btn-danger" onClick="return confirm('yakin mau hapus');">
                                             <i class="bi bi-trash" aria-hidden="true"></i></a>
-                                            <a href="<?php echo site_url(); ?>Unduh/<?= $rows->id_surat; ?>" class="btn btn-warning">
+                                            <a href="<?php echo site_url(); ?>AdminClient/download/<?= $rows->id_surat; ?>" class="btn btn-warning">
                                                         <i class="bi bi-download" aria-hidden="true"></i></a>
                                             <a href="<?= base_url(); ?>AdminClient/viewpdf/<?= $rows->id_surat; ?>" class="btn btn-success">
                                                 <i class="bi bi-book" aria-hidden="true"></i></a>    
@@ -103,7 +103,7 @@
     <footer>
         <div class="footer clearfix mb-0 text-muted">
             <div class="float-start">
-                <p>2021 © Literasi</p>
+                <p>2021 © Arsip</p>
             </div>
             <div class="float-end">
             </div>

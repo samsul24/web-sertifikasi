@@ -1,6 +1,4 @@
-<?php if ($this->session->userdata('id_user_role') != 2) {
-        redirect('login');
-    }; ?>
+
     <html lang="en">
 
     <head>

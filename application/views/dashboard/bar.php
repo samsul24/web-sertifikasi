@@ -45,27 +45,21 @@
               </a>
             </li>
 
-            <a href="<?php echo site_url(); ?>Homepage/about" class="sidebar-link">
+            <a href="<?php echo site_url(); ?>AdminClient/about" class="sidebar-link">
                 <i class="bi bi-person-bounding-box"></i>
                 <span>About</span>
               </a>
             
             </li>
             <li class="sidebar-item active ">
-              <a href="<?= base_url() . 'Login/out' ?>" onClick="return confirm('Logout sekarang ??');" class="sidebar-link">
-                <i class="bi bi-door-closed-fill"></i>
-                <span>Logout</span>
+              <a href="#" class="sidebar-link">
+                <span>&nbsp;</span>
               </a>
             </li>
           </ul>
         </div>
         <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
-        <!-- <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
-          <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-        </div>
-        <div class="ps__rail-y" style="top: 0px; height: 637px; right: 0px;">
-          <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 245px;"></div>
-        </div> -->
+       
       </div>
     </div>
     <div id="main" class='layout-navbar'>
@@ -82,25 +76,13 @@
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown me-1">
                   <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    <!-- <i class="bi bi-envelope bi-sub fs-4 text-gray-600"></i> -->
                   </a>
-                  <!-- <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                    <li>
-                      <h6 class="dropdown-header">Mail</h6>
-                    </li>
-                    <li><a class="dropdown-item" href="#">No new mail</a></li>
-                  </ul> -->
+                 
                 </li>
                 <li class="nav-item dropdown me-3">
                   <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    <!-- <i class="bi bi-bell bi-sub fs-4 text-gray-600"></i> -->
                   </a>
-                  <!-- <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                    <li>
-                      <h6 class="dropdown-header">Notifications</h6>
-                    </li>
-                    <li><a class="dropdown-item">No notification available</a></li>
-                  </ul> -->
+                  
                 </li>
               </ul>
               <div class="dropdown">
@@ -117,17 +99,7 @@
                     </div>
                   </div>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                  <li>
-                    <h6 class="dropdown-header">Hello, <?= $this->session->userdata('nama') ?>!</h6>
-                  </li>
-                  <li><a class="dropdown-item" href="<?php echo site_url(); ?>AdminClient/Profile"><i class="icon-mid bi bi-person me-2"></i> My
-                      Profile</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="<?= base_url() . 'Login/out' ?>" onClick="return confirm('Logout sekarang ??');"><i class="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
-                </ul>
+              
               </div>
             </div>
           </div>
